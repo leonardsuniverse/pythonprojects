@@ -1,9 +1,9 @@
-import random
+import secrets
 
 def roll():
     min_value = 1
     max_value = 6
-    roll = random.randint(min_value, max_value)
+    roll = secrets.SystemRandom().randint(min_value, max_value)
 
     return roll
 
