@@ -24,8 +24,7 @@ start_time = time.time()
 
 for i in range(TOTAL_PROBLEMS):
     expr, answer = generate_problem()
-    guess = input("Problem #" + str(i + 1) + ":" + expr + "=" )
-    if guess == str(answer):
+    if (guess := input("Problem #" + str(i + 1) + ":" + expr + "=" )) == str(answer):
         break
     wrong += 1
 
